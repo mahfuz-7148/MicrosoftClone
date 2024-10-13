@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar flex justify-between items-center p-4">
-      <div class="flex items-center md:order-2">
-        <div class="hamburger p-4 cursor-pointer inline-block md:hidden">
-          <div class="line h-0.5 w-6 my-1 bg-black"></div>
-          <div class="line h-0.5 w-6 my-1 bg-black"></div>
-          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+    <div class="container mx-auto">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="flex items-center md:order-2">
+          <div class="hamburger p-4 cursor-pointer inline-block md:hidden">
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          </div>
+          <div class="search md:hidden">SearchIcon</div>
         </div>
-        <div class="search md:hidden">SearchIcon</div>
-      </div>
 
       <div class="logo text-center md:order-1 flex">
-        <div class="w-32 -my-4"><img src="./logo.png" alt="" /></div>
+        <div class="lg:w-40 -my-7 md:w-44 p-3 w-40 md:p-5"><img src="./logo.png" alt="" /></div>
         <div
-          class="features md:flex md:mx-4 md:space-x-2 absolute inset-0 w-fit md:static bg-gray-200 md:bg-white -translate-x-96 md:translate-x-0"
+        class="features md:flex md:mx-4 md:space-x-2 absolute inset-0 w-fit md:static bg-gray-200 md:bg-white -translate-x-96 md:translate-x-0"
         >
           <div class="featuresItem">Microsoft 365</div>
           <div class="featuresItem">Office</div>
@@ -39,15 +40,36 @@
     </div>
 
 
-    <div class="slider flex flex-col-reverse md:flex-row bg-[#e6e6e6] mx-3">
+    <div class="slider flex flex-col-reverse md:flex-row bg-[#e6e6e6]">
       <div class="left flex flex-col justify-center items-center md:items-baseline py-12">
         <h1 class="md:text-4xl mx-5 font-medium text-2xl">Surface laptop 4</h1>
-        <p class="w-3/4 mx-5 text-center md:text-left">Do it all with a perfect balance of sleek</p>
-        <button class="text-white bg-black px-4 py-2 my-6 font-bold">Shop now</button>
+        <p class="w-3/4 mx-5 text-center md:text-left my-4">Do it all with a perfect balance of sleek</p>
+        <button class="text-white bg-black px-4 py-2 my-6 font-bold mx-10">Shop now</button>
       </div>
       <div class="right">
-        <img src="./slidems.png" alt="" class="w-96">
+        <img src="./slidems.png" alt="" class="w-[50rem] md:w-[60rem]">
       </div>
     </div>
+
+
+    <div class="promo space-y-4 flex flex-col lg:flex-row lg:gap-3">
+      <div class="item flex items-center space-x-1">
+        <img src="./surface.svg" alt="" class="w-14">
+        <span class="font-medium">Shop Surface devices</span>
+      </div>
+      <div class="item flex items-center space-x-1">
+        <img src="./xbox.svg" alt="" class="w-14">
+        <span class="font-medium">Shop Xbox games and consoles</span>
+      </div>
+      <div class="item flex items-center space-x-1">
+        <img src="./pc.svg" alt="" class="w-14">
+        <span class="font-medium">Find your next PC</span>
+      </div>
+      <div class="item flex items-center space-x-1">
+        <img src="./microsoft.svg" alt="" class="w-14">
+        <span class="font-medium">Choose your Microsoft 365</span>
+      </div>
+    </div>
+  </div>
   </body>
-</html>
+  </html>
